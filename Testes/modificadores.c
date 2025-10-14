@@ -10,6 +10,7 @@ int main () {
     long double veryPreciseNumber = 3.14159265358979323846;
     unsigned long int largePositiveNumber = 4000000000;
     unsigned int numeroPositivo = 4000000000;
+    short int numeroPequeno = 32768;
 
 
     printf("Numero com sinal: %d\n", numeroSinal);
@@ -20,6 +21,7 @@ int main () {
     printf("Número muito preciso (long double): %.21Lf\n", veryPreciseNumber);
     printf("Número positivo grande: %lu\n", largePositiveNumber);
     printf("Número positivo: %u\n", numeroPositivo);
+    printf("Número pequeno (short int): %d\n", numeroPequeno);
 
     return 0;
 }
