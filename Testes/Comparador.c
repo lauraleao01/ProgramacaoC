@@ -19,8 +19,8 @@ int main () {
 
     int resultadoA, resultadoB;
 
-    printf("Produto %s tem estoque %u e o valor unitário é R$ %.2f\n", produtoA, estoqueA, valorA);
-    printf("Produto %s tem estoque %u e o valor unitário é R$ %.2f\n", produtoB, estoqueB, valorB);
+    printf(" %s tem estoque %u e o valor unitário é R$ %.2f\n", produtoA, estoqueA, valorA);
+    printf(" %s tem estoque %u e o valor unitário é R$ %.2f\n", produtoB, estoqueB, valorB);
 
     resultadoA = estoqueA > estoqueMinimoA;
     resultadoB = estoqueB > estoqueMinimoB;
