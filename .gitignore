@@ -1,0 +1,12 @@
+# Ignore compiled binaries in Testes but keep source files
+/Testes/*
+!/Testes/*.c
+!/Testes/*.h
+
+# Common build artifacts
+*.o
+*.out
+*.exe
+
+# VS Code workspace settings
+.vscode/*.code-workspace
