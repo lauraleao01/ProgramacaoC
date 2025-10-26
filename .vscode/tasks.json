@@ -22,6 +22,29 @@
                 "isDefault": true
             },
             "detail": "Tarefa gerada pelo Depurador."
+        },
+        {
+            "label": "Build all C files",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-lc",
+                "for f in \"${workspaceFolder}/Testes\"/*.c; do /usr/bin/gcc -g \"$f\" -o \"${f%.*}\" || exit 1; done"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Compila todos os arquivos .c em /Testes para binários com mesmo nome"
         }
     ],
     "version": "2.0.0"
